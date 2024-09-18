@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/logitech_f710.dir/src/logitech_f710.cpp.o -o logitech_f710  libjoystick.a 

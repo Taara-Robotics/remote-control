@@ -1,0 +1,4 @@
+/home/gutnar/Projects/taara/remote-control/publisher/build/CMakeFiles/joystick.dir
+/home/gutnar/Projects/taara/remote-control/publisher/build/CMakeFiles/joystick_publisher.dir
+/home/gutnar/Projects/taara/remote-control/publisher/build/CMakeFiles/edit_cache.dir
+/home/gutnar/Projects/taara/remote-control/publisher/build/CMakeFiles/rebuild_cache.dir

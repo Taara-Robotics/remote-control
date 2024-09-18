@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/joystick_publisher.dir/src/joystick_publisher.cpp.o -o joystick_publisher  libjoystick.a 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libjoystick.a CMakeFiles/joystick.dir/home/gutnar/Projects/taara/remote-control/3rd/joystick/joystick.cc.o
+/usr/bin/ranlib libjoystick.a
