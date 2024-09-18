@@ -38,9 +38,12 @@ Allowed options:
   --move-x-axis arg (=3)          movement x-axis number
   --move-y-axis arg (=4)          movement y-axis number
   --turn-axis arg (=0)            turn axis number
-  --move-speed arg (=0.5)         max moving speed (m/s)
+  --move-speed arg (=0.2)         max moving speed (m/s)
   --turn-speed arg (=0.5)         max turning speed (rad/s)
   --key arg (=rc/{device index})  zenoh key
+  --inc-speed-button arg (=3)     increase speed button number
+  --dec-speed-button arg (=2)     decrease speed button number
+  --reset-speed-button arg (=0)   reset speed button number
 ```
 
 ## Subscriber
