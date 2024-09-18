@@ -148,8 +148,8 @@ int main(int argc, char *argv[])
     joystick_thread.join();
 
     // Publish 0 speeds on exit
-    std::vector<uint8_t> speeds(12);
-    zenoh_publisher.put(speeds);
+    speeds_message.assign(12, 0);
+    zenoh_publisher.put(speeds_message);
 
     return EXIT_SUCCESS;
 }

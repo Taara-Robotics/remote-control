@@ -1,3 +1,15 @@
+# Remote control
+
+This project consists of a publisher and subscriber that communicate using Zenoh. The publisher reads joystick input and sends it to the subscriber, which controls the robot.
+
+The message are 12-byte payloads containing 3 floats:
+
+- x-axis speed;
+- y-axis speed;
+- rotation speed.
+
+The differential drive robot only uses the y-axis speed and rotation speed. The x-axis speed is included for future use, e.g. to control a robot with omni wheels.
+
 ## Publisher
 
 Dependencies:
