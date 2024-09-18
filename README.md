@@ -62,6 +62,24 @@ Running:
 ```sh
 $ ./differential_drive -h
 
+Allowed options:
+  -h, --help                          produce help message
+  --key arg (=rc/0)                   zenoh key
+  -r, --wheel-radius arg (=0.08)      wheel radius (m) for differential drive calculation
+  -b, --vehicle-width arg (=0.31)     distance between wheels (m) for differential drive calculation
+  -d, --device arg (=/dev/ttyACM0)    device path
+  --max-move-speed arg (=1)           max moving speed (m/s)
+  --max-turn-speed arg (=2)           max turning speed (rad/s)
+  --left-motor-id arg (=1)            left motor ID
+  --right-motor-id arg (=2)           right motor ID
+  --kill-timeout arg (=250)           stop motors if no commands received for this time (ms)
+  --stop-threshold arg (=0.025)       stop motors if move and turn speeds below this value (m/s or rad/s)
+  --max-torque arg (=1)               Moteus max_torque
+  --feedforward-torque arg (=0)       Moteus feedforward_torque
+  --kp-scale arg (=4)                 Moteus kp_scale
+  --kd-scale arg (=4)                 Moteus kd_scale
+  -m, ----motor-speed-multiplier arg (=0.67)
+                                      Multipler to convert wheel rotation speed to motor speed value
 ```
 
 To find Moteus device, run:
