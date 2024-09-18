@@ -15,7 +15,14 @@ target_include_directories(${MOTEUSAPI_LIB} PUBLIC ${MOTEUSAPI_INCLUDE_DIR})
 # Define popl library
 set(POPL_INCLUDE_DIR ../3rd/popl/include)
 
+# Find zenoh
+find_library(ZENOH_LIB zenohc REQUIRED)
+find_path(ZENOH_INCLUDE_DIR zenoh.hxx REQUIRED)
+message(STATUS "Zenoh library: ${ZENOH_LIB}")
+message(STATUS "Zenoh include dir: ${ZENOH_INCLUDE_DIR}")
+
 # Add differential_drive executable
 add_executable(differential_drive src/differential_drive.cpp)
-target_link_libraries(differential_drive ${MOTEUSAPI_LIB})
-target_include_directories(differential_drive PRIVATE ${POPL_INCLUDE_DIR} ${MOTEUSAPI_INCLUDE_DIR})
+target_link_libraries(differential_drive ${MOTEUSAPI_LIB} ${ZENOH_LIB})
+target_include_directories(differential_drive PRIVATE ${POPL_INCLUDE_DIR} ${MOTEUSAPI_INCLUDE_DIR} ${ZENOH_INCLUDE_DIR})
+target_compile_definitions(differential_drive PRIVATE ZENOHCXX_ZENOHC)

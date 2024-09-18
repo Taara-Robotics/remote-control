@@ -20,8 +20,6 @@ find_path(ZENOH_INCLUDE_DIR zenoh.hxx REQUIRED)
 message(STATUS "Zenoh library: ${ZENOH_LIB}")
 message(STATUS "Zenoh include dir: ${ZENOH_INCLUDE_DIR}")
 
-add_compile_definitions()
-
 # Add joystick_publisher executable
 add_executable(joystick src/joystick.cpp)
 target_link_libraries(joystick ${JOYSTICK_LIB} ${ZENOH_LIB})
