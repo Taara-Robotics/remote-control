@@ -7,7 +7,7 @@
         "${workspaceFolder}/3rd/joystick",
         "${workspaceFolder}/3rd/popl/include"
       ],
-      "defines": [],
+      "defines": ["ZENOHCXX_ZENOHC"],
       "compilerPath": "/usr/bin/gcc",
       "cStandard": "c17",
       "cppStandard": "gnu++17",

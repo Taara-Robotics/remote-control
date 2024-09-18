@@ -1,11 +1,13 @@
 ## Publisher
 
 Dependencies:
+
 ```sh
 sudo apt install joystick
 ```
 
 Building:
+
 ```sh
 cd publisher
 mkdir build && cd build
@@ -14,8 +16,9 @@ make
 ```
 
 Running:
+
 ```sh
-$ ./joystick_publisher -h
+$ ./joystick -h
 
 Allowed options:
   -h, --help               produce help message
@@ -29,6 +32,7 @@ Allowed options:
 ## Subscriber
 
 Building:
+
 ```sh
 cd subscriber
 mkdir build && cd build
@@ -37,18 +41,22 @@ make
 ```
 
 Running:
+
 ```sh
 $ ./differential_drive -h
 
 ```
 
 To find Moteus device, run:
+
 ```sh
 sudo dmesg | grep "USB ACM device"
 ```
 
 Based on the example output
+
 ```sh
 [   11.902840] cdc_acm 1-2.4:1.0: ttyACM0: USB ACM device
 ```
+
 the device path is `/dev/ttyACM0`.
