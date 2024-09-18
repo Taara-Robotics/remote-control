@@ -33,12 +33,14 @@ Running:
 $ ./joystick -h
 
 Allowed options:
-  -h, --help               produce help message
-  -d, --device arg (=0)    device index
-  --move-axis arg (=4)     move axis
-  --turn-axis arg (=0)     turn axis
-  --move-speed arg (=0.5)  max moving speed (m/s)
-  --turn-speed arg (=0.5)  max turning speed (rad/s)
+  -h, --help                      produce help message
+  -d, --device arg (=0)           device index
+  --move-x-axis arg (=3)          movement x-axis number
+  --move-y-axis arg (=4)          movement y-axis number
+  --turn-axis arg (=0)            turn axis number
+  --move-speed arg (=0.5)         max moving speed (m/s)
+  --turn-speed arg (=0.5)         max turning speed (rad/s)
+  --key arg (=rc/{device index})  zenoh key
 ```
 
 ## Subscriber
